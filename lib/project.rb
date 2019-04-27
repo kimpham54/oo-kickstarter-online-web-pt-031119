@@ -13,7 +13,7 @@ end
 
 def add_project(backer)
   if backer.backed_projects.include?(self) == false
-    backer.backed_projects << project
+    backer.backed_projects << self
   end
 end
 
