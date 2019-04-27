@@ -13,7 +13,7 @@ end
 
 def add_project(project)
   if backer.backed_projects.inspect?(self) == false
-    project.backers << self
+    backer.backed_projects << self
   end
 end
 
