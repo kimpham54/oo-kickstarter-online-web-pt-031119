@@ -16,7 +16,7 @@ add_backer_to_projects(project)
 
   def add_backer_to_projects(project)
     if project.backers.include?(self) == false
-      project.backers << backer
+      project.backers << self
     end
   end
 
