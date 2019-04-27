@@ -14,4 +14,8 @@ attr_reader :backed_projects, :name
 project.add_backer(self)
   end
 
+  def add_backer(backer)
+    if project.backers.inspect?(self) == false
+      project.backers << self
+
 end
