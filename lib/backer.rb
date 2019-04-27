@@ -16,7 +16,7 @@ project.add_backer(self)
 
   def add_backer(backer)
     if project.backers.inspect?(self) == false
-      project.backers << self
+      project.backers.add_backer(backer)
     end
   end
 
