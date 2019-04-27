@@ -11,11 +11,11 @@ attr_reader :backed_projects, :name
 
   def back_project(project)
 @backed_projects << project
-add_backer_to_projects(self)
+add_backer_to_projects(project)
   end
 
-  def add_backer_to_projects(backer)
-    if project.backers.inspect?(backer) == false
+  def add_backer_to_projects(project)
+    if project.backers.inspect?(self) == false
       project.backers << backer
     end
   end
