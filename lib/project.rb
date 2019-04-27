@@ -8,7 +8,13 @@ end
 
 def add_backer(backer)
   @backers << backer
-  backer.back_project(self)
+  add_project(self)
+end
+
+def add_project(project)
+  if backer.backed_projects.inspect?(self) == false
+    project.backers << self
+  end
 end
 
 end
