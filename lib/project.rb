@@ -12,7 +12,7 @@ def add_backer(backer)
 end
 
 def add_project(project)
-  if backer.backed_projects.inspect?(self) == false
+  if backer.backed_projects.inspect?(project) == false
     backer.backed_projects << project
   end
 end
